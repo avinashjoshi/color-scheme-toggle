@@ -1,5 +1,7 @@
 # Color Scheme Toggle [ 🖥 | 🌙 | ☀️ ]
 A simple javascript to toggle your website between [ 🖥 system theme | 🌙 dark mode | ☀️ light mode ]
+- Defaults to system theme
+- Your preference is saved to local storage
 
 # Usage
 1. Add your custom button for the toggle followed by the `color-scheme-toggle.js` script:
