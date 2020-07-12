@@ -1,0 +1,133 @@
+:root {
+    /* Gray Color */
+    --gray-dark: rgb(36, 36, 38);
+    --gray-dark2: rgb(54, 54, 56);
+    --gray-light: rgb(235, 235, 240);
+    --gray-light2: rgb(216, 216, 220);
+
+    /* Other Color */
+    --blue-dark: rgb(64, 156, 255);
+    --blue-light: rgb(0, 64, 221);
+
+    --body-width: 50rem;
+}
+
+:root {
+    --body-bg: var(--gray-light);
+    --body-color: var(--gray-dark);
+
+    --link-color: var(--blue-light);
+
+    --button-bg: var(--gray-dark);
+    --button-color: var(--gray-light);
+
+    --h2-color: var(--gray-dark2);
+}
+
+:root[data-theme='dark'] {
+    --body-bg: var(--gray-dark);
+    --body-color: var(--gray-light);
+
+    --link-color: var(--blue-dark);
+
+    --button-bg: var(--gray-light);
+    --button-color: var(--gray-dark);
+
+    --h2-color: var(--gray-light2);
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size:16px
+}
+
+body {
+    padding: 1rem 1.5rem;
+    margin: 0;
+    line-height: 1.5;
+    color: var(--body-color);
+    background-color: var(--body-bg);
+    text-align: center;
+}
+
+.container {
+    max-width: var(--body-width);
+    margin: 0 auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+a {
+    color: var(--link-color);
+}
+
+h2 {
+    color: var(--h2-color);
+}
+
+button.color-scheme {
+    width: 18rem;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: .025rem solid;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
+header h3.title {
+    float: left;
+}
+
+header .nav {
+    padding-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+}
+
+header .nav li {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+header a {
+    color: var(--body-color);
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    border-top: .025rem solid;
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+    font-size: .8rem;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "color-scheme-toggle",
+  "version": "1.0.0",
+  "description": "A simple javascript to toggle your website between [ 🖥 system theme | 🌙 dark mode | ☀️ light mode ]",
+  "main": "color-scheme-toggle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avinashjoshi/color-scheme-toggle.git"
+  },
+  "keywords": [
+    "dark-mode",
+    "dark-mode-switch",
+    "dark-mode-toggle",
+    "dark-mode-switcher",
+    "dark-mode-js",
+    "darkmode"
+  ],
+  "author": "Avinash Joshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avinashjoshi/color-scheme-toggle/issues"
+  },
+  "homepage": "https://github.com/avinashjoshi/color-scheme-toggle#readme"
+}
